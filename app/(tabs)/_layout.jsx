@@ -3,13 +3,14 @@ import {Tabs} from 'expo-router'
 import Ionicons from '@expo/vector-icons/Ionicons';
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import Colors from '@/constants/Colors';
-import { Image, TouchableOpacity, View } from 'react-native';
+import { Image, TouchableOpacity, View, Text } from 'react-native';
 import { Link } from 'expo-router';
 export default () => {
 
-  
   return(
-    <Tabs screenOptions={{
+    
+    <Tabs screenOptions=
+    {{
       headerLeft : ()=>(
 
           <Image
@@ -20,7 +21,7 @@ export default () => {
 
       headerRight : () =>(
         <TouchableOpacity style={{marginRight : 20}}>
-          <Link href={'profileScreens/profileOne'} >
+          <Link href={'profileScreens/profileOne'} as>
             <View>
                 <Image
                   source={require('../../assets/images/prof.png')}
@@ -33,7 +34,7 @@ export default () => {
       headerStyle : {backgroundColor: Colors.myGray,},
       tabBarStyle : {
         backgroundColor : 'white',
-        height : 70
+        height : 50
       }
     }}>
 
@@ -48,14 +49,16 @@ export default () => {
             paddingBottom : 10
           },
           title: "",
-          // headerTitle : false,
           tabBarIcon: ({ focused }) => (
-            <Ionicons
-              size={23}
-              style={{ marginBottom: -3 }}
-              name="home"
-              color={focused ? Colors.myYellow : 'gray'}
-            />
+            <View style={{alignItems : 'center'}}>
+              <Ionicons
+                size={23}
+                style={{ marginBottom: -3 }}
+                name="home"
+                color={focused ? Colors.myYellow : 'gray'}
+              />
+              <Text style={{color : focused ? Colors.myYellow : 'gray', marginLeft : 0, fontFamily : 'poppinsBold', fontSize : 12 }}>Home</Text>
+            </View>
           ),
         }}
       />
@@ -72,12 +75,15 @@ export default () => {
           },
           title: "",
           tabBarIcon: ({ focused }) => (
-            <Ionicons
-              size={23}
-              style={{ marginBottom: -3 }}
-              name="chatbox-outline"
-              color={focused ? Colors.myYellow : 'gray'}
-            />
+            <View>
+              <Ionicons
+                size={23}
+                style={{ marginBottom: -3 }}
+                name="chatbox-outline"
+                color={focused ? Colors.myYellow : 'gray'}
+              />
+              <Text style={{color : focused ? Colors.myYellow : 'gray', marginLeft : 0, fontFamily : 'poppinsBold', fontSize : 12}}>Chat</Text>
+            </View>
           ),
         }}
       />

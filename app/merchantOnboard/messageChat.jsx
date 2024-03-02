@@ -25,7 +25,7 @@ const messageChat = () => {
 
                     <Ionicons name='ellipse' color={Colors.myGreen} style={{position : 'absolute', bottom : 0, left : 20, borderColor : 'white', borderWidth : 1}} size={7}/>
                 </TouchableOpacity>
-                <Text style={{fontFamily : 'Poppinsa', fontSize : 15}}>Jason kassey</Text>
+                <Text style={{fontFamily : 'poppinsBold', fontSize : 15}}>Jason kassey</Text>
 
                 <View style={{display : 'flex', flexDirection : 'row', marginLeft : 'auto', gap : 5, alignItems : 'center'}}>
                     <Ionicons name='time-outline' color={Colors.myGreen}/>
@@ -34,7 +34,7 @@ const messageChat = () => {
             </View>
 
             <ScrollView style={{padding : 20, height : '75%',}}>
-                <Text style={{textAlign : 'center', fontFamily : 'Poppinsa', fontSize : 12, color : 'gray'}}>Current rate $318.01</Text>
+                <Text style={{textAlign : 'center', fontFamily : 'poppinsRegular', fontSize : 12, color : 'gray'}}>Current rate $318.01</Text>
 
                 <View style={{marginBottom : 30}}>
                     <View style={{

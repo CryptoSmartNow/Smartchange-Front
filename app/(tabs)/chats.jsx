@@ -2,17 +2,10 @@ import { StyleSheet, Text, View, Image} from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { TouchableOpacity } from 'react-native'
-import { useFonts,  } from 'expo-font'
 import Colors from '@/constants/Colors'
 import { Link, useNavigation } from 'expo-router'
 const Chats = () => {
 
-    const [fontLoaded] =useFonts({
-        Poppins: require('../../assets/fonts/Poppins-SemiBold.ttf'),
-        Poppinsa: require('../../assets/fonts/Poppins-Regular.ttf')
-      })
-
-      
       
   return (
     <SafeAreaView style={{paddingHorizontal : 0, marginTop : 0, flex : 1,}}>
@@ -53,17 +46,17 @@ const Chats = () => {
 
                     <View>
                         <View style={{display : 'flex', flexDirection : 'row', gap : 8, alignItems :'center', }}>
-                            <Text style={{fontSize : 15, fontFamily : 'Poppins', }}>Jason kassey</Text>
+                            <Text style={{fontSize : 15, fontFamily : 'poppinsRegular', }}>Jason kassey</Text>
                             <TouchableOpacity style={{backgroundColor : Colors.myRed, paddingHorizontal : 8, borderRadius : 2, height : 15, display : 'flex'}}>
-                                <Text style={{fontFamily : 'Poppins',textAlign : 'center', justifyContent: 'center',alignSelf : 'center', fontSize : 10, color : 'white', paddingTop : 1}}>Sell</Text>
+                                <Text style={{fontFamily : 'poppinsRegular',textAlign : 'center', justifyContent: 'center',alignSelf : 'center', fontSize : 10, color : 'white', paddingTop : 1}}>Sell</Text>
                             </TouchableOpacity>
                         </View>
-                        <Text style={{fontSize : 12, fontFamily : 'Poppinsa', color : Colors.myYellow}}>Session Ongoing . .</Text>
+                        <Text style={{fontSize : 12, fontFamily : 'poppinsRegular', color : Colors.myYellow}}>Session Ongoing . .</Text>
                     </View>
 
                     <View style={{ marginLeft : 'auto', width : '100%',}}>
-                        <Text style={{fontSize : 12, fontFamily : 'Poppinsa', textAlign : 'right'}}>12:34</Text>
-                        <Text style={{fontSize : 12, fontFamily : 'Poppinsa',}}>17/02/2024</Text>
+                        <Text style={{fontSize : 12, fontFamily : 'poppinsRegular', textAlign : 'right'}}>12:34</Text>
+                        <Text style={{fontSize : 12, fontFamily : 'poppinsRegular',}}>17/02/2024</Text>
                     </View>
                 </View>
             </Link>

@@ -11,11 +11,6 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 
 const setupOne = () => {
 
-  const [fontLoaded] =useFonts({
-    Poppins: require('../../assets/fonts/Poppins-SemiBold.ttf'),
-    Poppinsa: require('../../assets/fonts/Poppins-Regular.ttf')
-  })
-
 
   const [hasCameraPermission, setHasCameraPermission] = useState(null);
   const [camera, setCamera] = useState(null);
@@ -48,7 +43,7 @@ const takePicture = async () => {
     <SafeAreaView style={styles.container}>
 
     <View style={styles.logoDiv}>
-      <Text style={{fontSize : 20, fontFamily : 'Poppins', paddingBottom : 30}}>Setup your profile</Text>
+      <Text style={{fontSize : 20, fontFamily : 'poppinsRegularRegular', paddingBottom : 30}}>Setup your profile</Text>
 
         {image ? 
           
@@ -80,7 +75,7 @@ const takePicture = async () => {
     <View style={{borderRadius : 40, paddingTop : 30}}>
       <TouchableOpacity onPress={() => takePicture()} 
         style={{backgroundColor : Colors.myYellow, alignSelf : 'center', width : '100%', padding : 12,  }}>
-        <Text style={{textAlign : 'center', fontFamily : 'Poppins', fontSize : 15,}}>Take Selfies</Text>
+        <Text style={{textAlign : 'center', fontFamily : 'poppinsRegular', fontSize : 15,}}>Take Selfies</Text>
       </TouchableOpacity>  
       
       <View style={styles.cameraContainer}>
@@ -100,17 +95,17 @@ const takePicture = async () => {
       <View>
       
         <View style={styles.inputDiv}>
-          <Text style={{fontFamily : 'Poppinsa', paddingBottom : 5}}>First Name</Text>
+          <Text style={{fontFamily : 'poppinsRegular', paddingBottom : 5}}>First Name</Text>
           <TextInput style={{backgroundColor : Colors.myGray, padding : 10, borderRadius : 5}} placeholder='Enter Fullname' />
         </View>
 
         <View style={styles.inputDiv}>
-          <Text style={{fontFamily : 'Poppinsa', paddingBottom : 5}}>Last Name</Text>
+          <Text style={{fontFamily : 'poppinsRegular', paddingBottom : 5}}>Last Name</Text>
           <TextInput style={{backgroundColor : Colors.myGray, padding : 10, borderRadius : 5}} placeholder='Enter Fullname' />
         </View>
 
         <View style={styles.inputDiv}>
-          <Text style={{fontFamily : 'Poppinsa', paddingBottom : 5}}>Phone Number</Text>
+          <Text style={{fontFamily : 'poppinsRegular', paddingBottom : 5}}>Phone Number</Text>
           <TextInput style={{backgroundColor : Colors.myGray, padding : 10, borderRadius : 5}} placeholder='Enter Fullname' />
         </View>
 
@@ -126,7 +121,7 @@ const takePicture = async () => {
     <View style={styles.buttonStyleDiv}>
       <Link href={'/merchantOnboard/setupTwo'} asChild style={styles.buttonStyle}>
       <TouchableOpacity style={{display : 'flex', alignSelf : 'center', margin : 'auto'}}>
-        <Text style={{fontFamily : 'Poppins', textAlign:'center', alignSelf : 'center', display : 'flex'}}>Next</Text>
+        <Text style={{fontFamily : 'poppinsRegular', textAlign:'center', alignSelf : 'center', display : 'flex'}}>Next</Text>
       </TouchableOpacity>
       </Link>
     </View>

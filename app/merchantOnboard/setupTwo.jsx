@@ -10,13 +10,6 @@ import { Link, useNavigation } from 'expo-router'
 
 const setupTwo = () => {
 
-  const [fontLoaded] =useFonts({
-    Poppins: require('../../assets/fonts/Poppins-SemiBold.ttf'),
-    Poppinsa: require('../../assets/fonts/Poppins-Regular.ttf')
-  })
-
-
-
   const [image, setImage] = useState(null);
 
   const pickImage = async () => {
@@ -39,7 +32,7 @@ const setupTwo = () => {
   return (
     <SafeAreaView style={styles.container}>
 
-      <Text style={{fontSize : 20, fontFamily : 'Poppins', paddingBottom : 100, textAlign : 'center'}}>Setup your profile</Text>
+      <Text style={{fontSize : 20, fontFamily : 'poppinsBOld', paddingBottom : 100, textAlign : 'center'}}>Setup your profile</Text>
 
 
 
@@ -64,7 +57,7 @@ const setupTwo = () => {
     <View style={styles.buttonStyleDiv}>
       <Link href={'/merchantOnboard/setupThree'} asChild style={styles.buttonStyle}>
       <TouchableOpacity style={{display : 'flex', alignSelf : 'center', margin : 'auto'}}>
-        <Text style={{fontFamily : 'Poppins', textAlign:'center', alignSelf : 'center', display : 'flex'}}>Next</Text>
+        <Text style={{fontFamily : 'poppinsBold', textAlign:'center', alignSelf : 'center', display : 'flex'}}>Next</Text>
       </TouchableOpacity>
       </Link>
     </View>

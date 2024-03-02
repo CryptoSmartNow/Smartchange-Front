@@ -12,12 +12,6 @@ import {Picker} from '@react-native-picker/picker';
 
 const setupThree = () => {
 
-  const [fontLoaded] =useFonts({
-    Poppins: require('../../assets/fonts/Poppins-SemiBold.ttf'),
-    Poppinsa: require('../../assets/fonts/Poppins-Regular.ttf')
-  })
-
-
   const [selectedLanguage, setSelectedLanguage] = useState();
     const pickerRef = useRef();
 
@@ -33,8 +27,8 @@ const setupThree = () => {
     <SafeAreaView style={styles.container}>
 
       <View style={styles.loginDiv}> 
-        <Text style={{fontSize : 20, fontFamily : 'Poppins', paddingBottom : 10, textAlign : 'center'}}>Setup your profile</Text>
-        <Text style={{fontSize : 13, fontFamily : 'Poppins', paddingBottom : 50, textAlign : 'center'}}>Select a payment method</Text>
+        <Text style={{fontSize : 20, fontFamily : 'poppinsBold', paddingBottom : 10, textAlign : 'center'}}>Setup your profile</Text>
+        <Text style={{fontSize : 13, fontFamily : 'poppinsBold', paddingBottom : 50, textAlign : 'center'}}>Select a payment method</Text>
 
             <View>
 
@@ -81,7 +75,7 @@ const setupThree = () => {
         <View style={styles.buttonStyleDiv}>
       <Link href={'/merchantOnboard/setupFour'} asChild style={styles.buttonStyle}>
       <TouchableOpacity style={{display : 'flex', alignSelf : 'center', margin : 'auto'}}>
-        <Text style={{fontFamily : 'Poppins', textAlign:'center', alignSelf : 'center', display : 'flex'}}>Next</Text>
+        <Text style={{fontFamily : 'poppinsBold', textAlign:'center', alignSelf : 'center', display : 'flex'}}>Next</Text>
       </TouchableOpacity>
       </Link>
     </View>

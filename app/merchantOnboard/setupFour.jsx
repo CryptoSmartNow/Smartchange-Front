@@ -12,12 +12,6 @@ import {Picker} from '@react-native-picker/picker';
 
 const setupFour = () => {
 
-  const [fontLoaded] =useFonts({
-    Poppins: require('../../assets/fonts/Poppins-SemiBold.ttf'),
-    Poppinsa: require('../../assets/fonts/Poppins-Regular.ttf')
-  })
-
-
   const [selectedLanguage, setSelectedLanguage] = useState();
     const pickerRef = useRef();
 
@@ -33,8 +27,8 @@ const setupFour = () => {
     <SafeAreaView style={styles.container}>
 
       <View style={styles.loginDiv}> 
-        <Text style={{fontSize : 20, fontFamily : 'Poppins', paddingBottom : 10, textAlign : 'center'}}>Setup your profile</Text>
-        <Text style={{fontSize : 13, fontFamily : 'Poppins', paddingBottom : 50, textAlign : 'center'}}>An automated question or instruction</Text>
+        <Text style={{fontSize : 20, fontFamily : 'poppinsBold', paddingBottom : 10, textAlign : 'center'}}>Setup your profile</Text>
+        <Text style={{fontSize : 13, fontFamily : 'poppinsBold', paddingBottom : 50, textAlign : 'center'}}>An automated question or instruction</Text>
 
             <View>
 
@@ -44,7 +38,7 @@ const setupFour = () => {
                 </View>
 
                 <View style={styles.inputDiv}>
-                    <Text style={{fontFamily : 'Poppinsa', paddingBottom : 5}}>Popular picks</Text>
+                    <Text style={{fontFamily : 'poppinsRegular', paddingBottom : 5}}>Popular picks</Text>
                     
                     <View>
                         <Text style={{marginTop : 20, backgroundColor : Colors.myGray, padding : 15, borderRadius : 10, lineHeight : 20, borderColor : 'grey', borderWidth : 1}}>
@@ -67,7 +61,7 @@ const setupFour = () => {
         <View style={styles.buttonStyleDiv}>
       <Link href={'/merchantOnboard/setupOne'} asChild style={styles.buttonStyle}>
       <TouchableOpacity style={{display : 'flex', alignSelf : 'center', margin : 'auto'}}>
-        <Text style={{fontFamily : 'Poppins', textAlign:'center', alignSelf : 'center', display : 'flex'}}>Finish</Text>
+        <Text style={{fontFamily : 'poppinsRegular', textAlign:'center', alignSelf : 'center', display : 'flex'}}>Finish</Text>
       </TouchableOpacity>
       </Link>
     </View>

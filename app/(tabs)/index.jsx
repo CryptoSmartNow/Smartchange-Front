@@ -7,14 +7,6 @@ import { Colors } from 'react-native/Libraries/NewAppScreen'
 
 const HomeScreen = () => {
 
-
-    const [fontLoaded] =useFonts({
-        Poppins: require('../../assets/fonts/Poppins-SemiBold.ttf'),
-        Poppinsa: require('../../assets/fonts/Poppins-Regular.ttf'),
-      })
-
-      
-
   return (
     <SafeAreaView style={{paddingHorizontal : 15, paddingTop : 0, position : 'relative', flex : 1}}>
         {/* <View style={{display : 'flex', flexDirection : 'row', alignItems : 'center', }}>
@@ -38,26 +30,26 @@ const HomeScreen = () => {
                     display : 'flex', marginTop : 0, borderRadius : 10 
                 }}>
             <View>
-                <Text style={{textAlign : 'center', fontFamily : 'Poppinsa', fontSize : 12}}>Number of trades</Text>
-                <Text style={{textAlign : 'center', fontFamily : 'Poppins', fontSize :30, paddingVertical : 5}}>52</Text>
+                <Text style={{textAlign : 'center', fontFamily : 'poppinsRegular', fontSize : 12}}>Number of trades</Text>
+                <Text style={{textAlign : 'center', fontFamily : 'poppinsRegular', fontSize :30, paddingVertical : 5}}>52</Text>
                 
                 <TouchableOpacity style={{backgroundColor : '#E4E4E4', borderRadius : 5}}>
-                    <Text style={{textAlign : 'center', fontFamily : 'Poppinsa', padding : 6, paddingHorizontal: 20, fontSize : 12 }}>View Achievements</Text>
+                    <Text style={{textAlign : 'center', fontFamily : 'poppinsRegular', padding : 6, paddingHorizontal: 20, fontSize : 12 }}>View Achievements</Text>
                 </TouchableOpacity>
             </View>
         </View>
 
         <View style={{backgroundColor : 'white', marginTop : 20, padding : 20, flex : 1}}>
-            <Text style={{fontFamily : 'Poppinsa'}}>Transaction history</Text>
+            <Text style={{fontFamily : 'poppinsRegular'}}>Transaction history</Text>
             <View style={{paddingTop : 20, }}>
                 <View style={{display :'flex', flexDirection : 'row', }}>
                     <Text style={{fontSize : 15, fontFamily : 'Poppins'}}>ETH</Text>
-                    <Text style={{marginLeft : 'auto', fontSize : 15, fontFamily : 'Poppins'}}>0.123</Text>
+                    <Text style={{marginLeft : 'auto', fontSize : 15, fontFamily : 'poppinsRegular'}}>0.123</Text>
                 </View>
 
                 <View style={{display :'flex', flexDirection : 'row', }}>
-                    <Text style={{ fontFamily : 'Poppinsa', fontSize : 12}}>2023-11-27 08:27:27</Text>
-                    <Text style={{marginLeft : 'auto', fontFamily : 'Poppinsa', fontSize : 12}}>Completed</Text>
+                    <Text style={{ fontFamily : 'poppinsRegular', fontSize : 12}}>2023-11-27 08:27:27</Text>
+                    <Text style={{marginLeft : 'auto', fontFamily : 'poppinsRegular', fontSize : 12}}>Completed</Text>
                 </View>
             </View>
 
@@ -65,16 +57,16 @@ const HomeScreen = () => {
 
             <View style={{paddingTop : 20, }}>
                 <View style={{display :'flex', flexDirection : 'row', }}>
-                    <Text style={{fontSize : 15, fontFamily : 'Poppins'}}>ALGO</Text>
-                    <Text style={{marginLeft : 'auto', fontSize : 15, fontFamily : 'Poppins'}}>0.123</Text>
+                    <Text style={{fontSize : 15, fontFamily : 'poppinsRegular'}}>ALGO</Text>
+                    <Text style={{marginLeft : 'auto', fontSize : 15, fontFamily : 'poppinsRegular'}}>0.123</Text>
                 </View>
 
                 <View style={{display :'flex', flexDirection : 'row', }}>
-                    <Text style={{ fontFamily : 'Poppinsa', fontSize : 12}}>2023-11-26 09:32:00</Text>
-                    <Text style={{marginLeft : 'auto', fontFamily : 'Poppinsa', fontSize : 12}}>Completed</Text>
+                    <Text style={{ fontFamily : 'poppinsRegular', fontSize : 12}}>2023-11-26 09:32:00</Text>
+                    <Text style={{marginLeft : 'auto', fontFamily : 'poppinsRegular', fontSize : 12}}>Completed</Text>
                 </View>
             </View>
-            <Text style={{textAlign : 'center', paddingTop : 40, fontFamily : 'Poppinsa', fontSize : 12, color : 'gray'}}>No more data </Text>
+            <Text style={{textAlign : 'center', paddingTop : 40, fontFamily : 'poppinsRegular', fontSize : 12, color : 'gray'}}>No more data </Text>
         </View>
 
 

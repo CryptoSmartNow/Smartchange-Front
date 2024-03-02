@@ -29,7 +29,7 @@ const register = () => {
 
       <View style={styles.loginDiv}> 
 
-        <Text style={{fontSize : 20, fontFamily : 'Poppins'}}>Create an account</Text>
+        <Text style={{fontSize : 20, fontFamily : 'poppinsBold'}}>Create an account</Text>
 
         <View>
         
@@ -39,20 +39,20 @@ const register = () => {
           </View>
 
           <View style={styles.inputDiv}>
-            <Text style={{fontFamily : 'Poppinsa', paddingBottom : 5}}>Email Address</Text>
+            <Text style={{fontFamily : 'poppinsRegular', paddingBottom : 5}}>Email Address</Text>
             <TextInput style={{backgroundColor : Colors.myGray, padding : 10, borderRadius : 5}} placeholder='Enter Password'/>
           </View>
 
         </View>
 
-        <Text style={{textAlign : 'center', fontFamily : 'Poppinsa', paddingTop : 30}}>or</Text>
+        <Text style={{textAlign : 'center', fontFamily : 'poppinsRegular', paddingTop : 30}}>or</Text>
 
         <TouchableOpacity style={styles.gmailStyle}>
           <Image
             source={require('../../assets/images/google.png')}
             style={{width: 20, height : 20}}
           />
-          <Text style={{fontFamily : 'Poppinsa', }}>Sign in with Google</Text>
+          <Text style={{fontFamily : 'poppinsRegular', }}>Sign in with Google</Text>
         </TouchableOpacity>
 
         <Link href={'/merchantOnboard/setupOne'} asChild>
@@ -62,7 +62,7 @@ const register = () => {
         </Link>
 
 
-        <Text style={{textAlign : 'center', fontFamily : 'Poppins', paddingTop : 30}}>
+        <Text style={{textAlign : 'center', fontFamily : 'poppinsBold', paddingTop : 30}}>
           Already have an account? <Text style={{color : Colors.myYellow}} onPress={()=>navigate.goBack()}>Login in</Text>
         </Text>
         

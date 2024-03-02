@@ -15,14 +15,15 @@ export {
 } from 'expo-router';
 
 export const unstable_settings = {
-  initialRouteName: '(tabs)',
+  initialRouteName: 'profileScreens/profileOne',
 };
 
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const [loaded, error] = useFonts({
-    SpaceMono: require('../assets/fonts/Poppins-Bold.ttf'),
+    poppinsBold: require('../assets/fonts/Poppins-Bold.ttf'),
+    poppinsRegular: require('../assets/fonts/Poppins-Regular.ttf'),
     ...FontAwesome.font,
   });
 
@@ -63,11 +64,6 @@ function RootLayoutNav() {
           headerShadowVisible : false,
           headerBackVisible : true,
           headerStyle : {backgroundColor : Colors.myYellow},
-          // headerLeft: () => ( 
-          //   <TouchableOpacity onPress={()=> navigate.goBack()}>
-          //     <Ionicons name='arrow-back' size={20} />
-          //   </TouchableOpacity>
-          // ),
 
           headerRight : ()=>(
             <TouchableOpacity onPress={()=> navigate.goBack()}>
@@ -81,9 +77,17 @@ function RootLayoutNav() {
         <Stack.Screen name="merchantOnboard/setupTwo" options={{ headerShown: false }} />
         <Stack.Screen name="merchantOnboard/setupThree" options={{ headerShown: false }} />
         <Stack.Screen name="merchantOnboard/setupFour" options={{ headerShown: false }} />
+
         <Stack.Screen name="profileScreens/profileOne" options={{
           headerTitle : 'Profile', 
-          
+          headerShadowVisible : false, 
+          headerTitleStyle : {fontFamily : 'SpaceMonoa'},
+          headerStyle : {backgroundColor : Colors.myGray},
+          headerRight : ()=>(
+            <TouchableOpacity onPress={()=> navigate.goBack()}>
+              <Ionicons name='ellipsis-vertical' size={20} />
+            </TouchableOpacity>
+          )
         }} />
       </Stack>
 
